@@ -14,7 +14,7 @@ def print_draw_crop_rec_res( img_crop_list, img_name):
           crop_label.write("{0}\t{1}\n".format(crop_name, text[bno]))
 
 crop_label = open('crop.txt','w')
-with open('train.txt','r') as file_text:
+with open('./train/train.txt','r') as file_text:
   img_files=file_text.readlines()
   
 count=0
